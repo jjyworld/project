@@ -67,14 +67,14 @@
         section{
             clear:both;
             overflow:hidden;
-            background-image: url('../01data/02img/header_bg.jpg');
+            background-image: url('./01data/02img/header_bg.jpg');
         }
         
         section #visual{
             width:100%;
             height:688px;
             position:relative; /* 부모요소 기준 */
-            margin-bottom:688px;
+            margin-bottom:648px;
         }
         
         #visual img, #visual > #v1{
@@ -93,7 +93,7 @@
             width:350px;
             height:150px;
             line-height: 150px;
-            background:url('../01data/02img/base_button.png');
+            background:url('./01data/02img/base_button.png');
             background-position:center center;
             background-repeat:repeat;
             
@@ -109,7 +109,7 @@
             width:350px;
             height:150px;
             line-height: 150px;
-            background:url('../01data/02img/push_button.png');
+            background:url('./01data/02img/push_button.png');
             background-position:center center;
             background-repeat:repeat;
             
@@ -138,16 +138,21 @@
 */        
         
         article:not(#visual){
-            width:940px;
-            margin:30px auto;
-            background-color:aqua;
+            width:1200px;
+            margin:0px auto;
+            height:750px;
+        }
+        
+        
+        article:not(#visual) img{
+            width:1200px;
             height:740px;
         }
         
         /*  푸터영역 서식 */
         footer{
             width:100%;
-            height:80px;
+            height:70px;
             background-color:#222;
         }
         
@@ -160,7 +165,7 @@
         
         /* top버튼 서식 */
         footer > a{
-            background:url('../01data/02img/top_bg.jpg');
+            background:url('./01data/02img/top_bg.jpg');
             background-position: center;
             background-size:100%;
             color:#fff;
@@ -189,6 +194,96 @@
             top:100px;
             z-index:7777;
         }
+        
+        
+        form{
+    float: right;
+    width: 870px;
+    height: 540px;
+    background: #fff;
+    position: relative;
+    top:100px;
+    right:165px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+fieldset{
+    border: none;
+    padding: 20px;
+    text-align: center;
+}
+
+legend{
+    padding-top: 40px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+.subject input[type=text]{
+    background: #ffffff;
+    border: 3px solid rgba(108, 108, 108, 0.65);
+    border-radius: 5px;
+    font-size: 23px;
+    width: 700px;
+    padding: 10px 20px;
+}
+
+.yourname input[type=text]{
+    background: #ffffff;
+    border: 3px solid rgba(108, 108, 108, 0.65);
+    border-radius: 5px;
+    font-size: 23px;
+    width: 210px;
+    padding: 10px 20px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 42px;
+}
+
+.youremail input[type=email]{
+    background: #ffffff;
+    border: 3px solid rgba(108, 108, 108, 0.65);
+    border-radius: 5px;
+    font-size: 23px;
+    width: 420px;
+    padding: 10px 20px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 42px;
+}
+
+.field textarea{
+    background: #ffffff;
+    border: 3px solid rgba(108, 108, 108, 0.65);
+    border-radius: 5px;
+    font-size: 23px;
+    width: 700px;
+    padding: 10px 20px;
+    margin-top: 20px;
+   
+}
+
+input[type=submit]{
+    width: 300px;
+    font-size: 19px;
+    padding: 13px 0px;
+    margin-top: 20px;
+    border:none;
+    background:rgba(153,0,0,0.8);
+    color: #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+input[type=submit]:hover{
+    background:rgb(221, 221, 67);
+    color:#fff;
+/*    font-weight: bold;*/
+}
         
     </style>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -305,7 +400,7 @@
     <nav>
 <!--        ul.gnb>li*7>a[href=# title=]-->
    <ul class="gnb">
-       <li id="logo"><a href="#" title="로고"><img src="../01data/03logo/logo-di-01f9ac836ec31eed.png" alt="상단로고"></a></li>
+       <li id="logo"><a href="#" title="로고"><img src="./01data/03logo/logo-di-01f9ac836ec31eed.png" alt="상단로고"></a></li>
        <li><a href="#" title="소개">소개</a></li>
        <li><a href="#" title="세계">세계</a></li>
        <li><a href="#" title="조작법">조작법</a></li>
@@ -327,13 +422,53 @@
         <img src="../01data/03logo/visual_logo.png" alt="자동차 사진" id="v2">
         
     </article>
-    <article class="sub_con" id="cf"></article>
-    <article class="sub_con" id="hybrid"></article>
-    <article class="sub_con" id="design"></article>
-    <article class="sub_con" id="con"></article>
-    <article class="sub_con" id="tech"></article>
-    <article class="sub_con" id="safe"></article>    
-    <article class="sub_con" id="contact"></article>    
+    <article class="sub_con" id="cf"><img src="./01data/02img/intro.JPG" alt=""></article>
+    <article class="sub_con" id="hybrid"><img src="./01data/02img/sekai.JPG" alt=""></article>
+    <article class="sub_con" id="design"><img src="./01data/02img/zozac.JPG" alt=""></article>
+    <article class="sub_con" id="con"><img src="./01data/02img/job.JPG" alt=""></article>
+    <article class="sub_con" id="tech"><img src="./01data/02img/strory.JPG" alt=""></article>
+    <article class="sub_con" id="safe"><img src="./01data/02img/so.JPG" alt=""></article>    
+    <article class="sub_con" id="contact">
+      <!--              폼서식 시작-->
+               <form name="contact" method="post" action="contact_me1.php">
+        <fieldset>
+<!--           1.제목-->
+            <legend>CONTACT US</legend>
+            <div class="subject">
+                <label for="subject"></label>
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+            </div>
+            
+<!--            2.이름-->
+            <div class="yourname">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Your Name">
+            </div>
+            
+<!--            3. 이메일-->
+            <div class="youremail">
+                <label for="email"></label>
+                <input type="email" placeholder="Your Email Adress" name="email" id="email">
+            </div>            
+            
+            
+<!--            4.내용-->
+            <div class="field">
+                <label for="message"></label>
+                <textarea name="message" id="message" placeholder="Leave a Message" rows="4">
+                </textarea>
+            </div>     
+            
+<!--            5.보내기-->
+            <ul>
+                <li><input type="submit" value="SEND"></li>
+            </ul>                       
+            
+        </fieldset>
+        
+    </form>  
+        
+    </article>    
 </section>
 
 <!-- 푸터영역 -->
